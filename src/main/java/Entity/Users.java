@@ -15,6 +15,14 @@ public class Users {
     @JoinColumn(name = "idrol")
     private Roles roles;
 
+    public Roles getRoles() {
+        return roles;
+    }
+
+    public void setRoles(Roles roles) {
+        this.roles = roles;
+    }
+
     public int getId() {
         return id;
     }
@@ -63,11 +71,5 @@ public class Users {
         this.status = status;
     }
 
-    public Entity.Roles getRoles() {
-        return roles;
-    }
 
-    public void setRoles(Entity.Roles roles) {
-        this.roles = roles;
-    }
 }
