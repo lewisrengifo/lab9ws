@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/clase11ej2servidorrest.iml" filepath="$PROJECT_DIR$/clase11ej2servidorrest.iml" />
       <module fileurl="file://$PROJECT_DIR$/practicandolab9.iml" filepath="$PROJECT_DIR$/practicandolab9.iml" />
     </modules>
   </component>

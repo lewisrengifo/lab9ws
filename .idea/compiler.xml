@@ -7,14 +7,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="practicandolab9" />
+        <module name="clase11ej2servidorrest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="clase11ej2servidorrest" target="1.8" />
       <module name="practicandolab9" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="clase11ej2servidorrest" options="-parameters" />
       <module name="practicandolab9" options="-parameters" />
     </option>
   </component>
