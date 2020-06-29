@@ -6,12 +6,9 @@
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
-<<<<<<< HEAD
-          <factory-entry name="practicandolab9" />
-=======
           <factory-entry name="Entities" />
           <factory-entry name="entityManagerFactory" />
->>>>>>> 0c5eff99f2aaff2bc36d34db247e540a23e6d79c
+          <factory-entry name="practicandolab9" />
         </datasource-mapping>
         <naming-strategy-map />
       </configuration>
