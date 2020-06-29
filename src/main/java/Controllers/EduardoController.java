@@ -6,8 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 
 @RestController
@@ -28,6 +30,17 @@ public class EduardoController {
         responseMap.put("estado", "creado");
         return new ResponseEntity(responseMap, HttpStatus.CREATED);
     }
+    @ExceptionHandler(HttpMessageNotReadableException.class)
+    public ResponseEntity gestionExcepcion(HttpServletRequest request) {
+
+        HashMap<String, Object> responseMap = new HashMap<>();
+        if (request.getMethod().equals("POST")) {
+            responseMap.put("estado", "error");
+            responseMap.put("msg", "Debe enviar un Character");
+        }
+        return new ResponseEntity(responseMap, HttpStatus.BAD_REQUEST);
+    }
+
 
 
 }
